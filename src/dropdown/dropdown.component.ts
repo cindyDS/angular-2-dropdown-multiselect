@@ -518,7 +518,7 @@ export class MultiselectDropdown
         titleSelections = useOptions.filter((option: IMultiSelectOption) => this.model.indexOf(option.id) > -1);
       }
 
-      this.title = titleSelections.map((option: IMultiSelectOption) => option.name).join(', ');
+      this.title = titleSelections.map((option: IMultiSelectOption) => option.shortName ? option.shortName : option.name ).join(', ');
     } else {
       this.title =
         this.numSelected +
