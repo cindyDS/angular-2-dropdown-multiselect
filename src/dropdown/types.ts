@@ -11,6 +11,7 @@ export interface IMultiSelectOption {
   params?: any;
   classes?: string;
   image?: string;
+  shortName?: string;
 }
 
 export interface IMultiSelectSettings {
